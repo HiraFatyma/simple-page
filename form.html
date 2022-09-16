@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form</title>
+        <style>
+            h1{
+                background-color: rgb(132, 132, 255);
+                text-align: center;
+                font-size: 48px;
+            }
+            p{
+                font-size: 18px;
+                margin-top: 2px;
+                padding-bottom: 0.5px;
+            }
+            sec{
+                text-align: center;
+            }
+            fieldset{
+                box-sizing: border-box;
+            }
+            label{
+                width: 100px;
+                display: inline-block;
+            }
+            div.a{
+               float: right;
+               width: 90%;
+            }
+            div.b{
+                float: right;
+                width: 90%;
+            }
+            div.c{
+                float: right;
+                width: 90%;
+            }
+            div.d{
+                
+                float: right;
+                width: 90%;
+            }
+            div.e{
+                float: right;
+                width: 90%;
+            }
+            div.f{
+                float: right;
+                width: 90%;
+            }
+            .on{
+                width: 100px;
+                height: 50px;
+                font-size: 20px;
+                background-color: rgb(82, 82, 228);
+                color: aliceblue;
+                border-radius: 5px;
+            
+            }
+        </style>
+    </head>
+
+    <body>
+            <h1>Client Details<br><p>Enter the details of all incoming clients.<p></h1>
+        
+        <form>
+            <label for="name">Client Name<span style="color:red;">*</span></label>
+            <sec>
+            <input type="text" id="name" placeholder="username" name="name" required>
+            </sec>
+            <br>
+            <br>
+            <label for="comp">Company<span style="color:red;">*</span></label>
+            <sec>
+            <input type="text" id="comp" placeholder="Name" name="comp" required>
+            </sec>
+            <br>
+            <br>
+            <label for="ti">Title<span style="color:red;">*</span></label>
+            <input type="text" id="ti" name="title" required>
+            <br>
+            <br>
+            <label for="dep">Department<span style="color:red;">*</span></label>
+            <select name="Department" id="dep">
+                <option value="sel" selected>-select-</option>
+                <option value="it">IT</option>
+                <option value="WEB">WEB DEVELOPMENT</option>
+                <option value="SOCIO">SOCIAL MARKETING</option>
+                <option value="DATA">DATA SCIENCE</option>
+                <option value="DATAE">DATA ENGENEERING</option>
+                <option value="SOFT">SOFTWARE PROGRAMMING</option>
+                <option value="VFX">VFX TRAINING</option>
+                <option value="WEBD">WEB DESIGNING</option>
+                <option value="SOFD">SOFTWARE DEVELOPMENT</option>
+            </select>
+            <br>
+            <br>
+            <p>Preferred contact method <span style="color:red;">*</span></p>
+            <input type="radio" name="contact" value="E-mail" id="email">
+            <label for="email">E-mail</label>
+            <input type="radio" name="contact" value="phone" id="ph">
+            <label for="ph">Phone</label>  
+            <br>
+            <br>
+        
+            <label for="Cname">Company Name<span style="color:red;">*</span></label>
+            <label><input type="text" id="street address" name="Cname" required>street address</label>
+            <br>
+            <br>
+            <div class="a">
+             <label><input type="text" id="address line 2" name="Cname" required>Address line 2</label>
+             <br>
+            </div>
+            <br>
+            <br>
+            <div class="c">
+             <label><input type="text" id="came" name="cname" required>city</label>
+            </div>
+            <br>
+            <br>
+            <div class="d">
+             <label><input type="text" id="came" name="cname" required>State/Province/Reigon
+            </div>
+            <br>
+            <br>
+            <div class="e">
+             <label><input type="text" id="came" name="cname" required>Postal zip code</label>
+            </div>
+            <br>
+            <br>
+            <div class="f">
+                <select name="como" id="como">
+                    <option value="sel" selected>-select-</option>
+                    <option value="naz">nazimabad</option>
+                    <option value="gard">garden</option>
+                    <option value="gulsh">gulshan e iqbal</option>
+                    <option value="pec">p.e.c.h.s</option>
+                    <option value="def">defence</option>
+                    <option value="kor">korangi</option>
+                    <option value="joh">johar</option>
+                    <option value="bah">bahria town</option>
+                    <option value="guru">gurumandir</option>
+                </select>
+            </div>
+            <br>
+            <br>
+            <br>
+            <label for="Cweb">Company Website<span style="color:red;">*</span></label>
+            <input type="url" id="Cwebe" name="Cweb" required>
+            <br>
+            <br>
+            <label for="Clogo">Company Logo<span style="color:red;">*</span></label>
+            <input type="file" id="Clogo" name="Clogo" required>
+            <br>
+            <br>
+            <label for="WD">Working Days<span style="color:red;">*</span></label>
+            <input type="week" id="WD" name="WD" maxlength="7" required>
+            <br>
+            <br>
+            <label for="da">Billing Cycle <span style="color:red;">*</span></label>
+            <input type="date" id="da" name="da">
+            <br>
+            <br>
+            <label for="comments">Additional Information <span style="color:red;">*</span></label>
+            <textarea name="comments" id="comments" rows="5" cols="30"></textarea>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <center>
+             <button class="on">submit</button>
+             </center>
+
+            
+            
+            
+        
+            
+                   
+
+
+
+
+        </form>
+    </body>
+</html>
